@@ -150,6 +150,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/main.c.s
 .PHONY : main.c.s
 
+src/block_creation.o: src/block_creation.c.o
+
+.PHONY : src/block_creation.o
+
+# target to build an object file
+src/block_creation.c.o:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/block_creation.c.o
+.PHONY : src/block_creation.c.o
+
+src/block_creation.i: src/block_creation.c.i
+
+.PHONY : src/block_creation.i
+
+# target to preprocess a source file
+src/block_creation.c.i:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/block_creation.c.i
+.PHONY : src/block_creation.c.i
+
+src/block_creation.s: src/block_creation.c.s
+
+.PHONY : src/block_creation.s
+
+# target to generate assembly for a file
+src/block_creation.c.s:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/block_creation.c.s
+.PHONY : src/block_creation.c.s
+
 src/block_operations.o: src/block_operations.c.o
 
 .PHONY : src/block_operations.o
@@ -297,6 +324,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/block_creation.o"
+	@echo "... src/block_creation.i"
+	@echo "... src/block_creation.s"
 	@echo "... src/block_operations.o"
 	@echo "... src/block_operations.i"
 	@echo "... src/block_operations.s"

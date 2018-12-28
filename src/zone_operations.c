@@ -50,3 +50,25 @@ t_my_bool 	is_correct_type_zone(t_zone* zone, size_t data_size)
 	}
 	return (FALSE);
 }
+
+t_my_bool	is_available_space_zone(t_zone *zone, size_t data_size)
+{
+	void	*last_address;
+	void	*possible_address;
+	t_block	*last_block;
+
+	last_address = (void*)zone + zone->size;
+	last_block = zone->start_block;
+	while (last_block->next_address)
+	{
+		last_block = last_block->next_address;
+	}
+	possible_address = (void*)last_block + sizeof(t_block) +
+						last_block->data_size + sizeof(t_block) +
+						data_size;
+	if (possible_address > last_address)
+	{
+		return (FALSE);
+	}
+	return (TRUE);
+}

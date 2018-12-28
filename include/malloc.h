@@ -26,7 +26,7 @@ typedef struct	s_block {
 	// check how it uses
 	void			*previous_address;
 	void			*next_address;
-	size_t			size_data;
+	size_t			data_size;
 	unsigned int	is_free;
 	void			*ptr_data;
 }				t_block;
@@ -74,6 +74,13 @@ t_zone			*get_correct_type_zone(t_zone *start_zone,
 					size_t data_size);
 t_my_bool 		is_correct_type_zone(t_zone* zone,
 					size_t data_size);
+t_my_bool		is_available_space_zone(t_zone *zone,
+					size_t data_size);
+
+/*
+** block_creation.c
+*/
+t_block			*add_block_to_zone(t_zone *zone, size_t size_data);
 
 
 /*
@@ -81,6 +88,10 @@ t_my_bool 		is_correct_type_zone(t_zone* zone,
 */
 void			block_init(t_zone *zone, t_block *ptr_block,
 					size_t data_size);
+t_block			*get_available_block(t_block *block, size_t data_size);
+t_block			*get_free_block(t_block *block);
+void 			set_block_to_used(t_block *block, size_t data_size);
+
 
 #endif
 

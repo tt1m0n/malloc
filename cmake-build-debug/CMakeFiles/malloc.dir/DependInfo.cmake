@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/developer/Desktop/malloc/main.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/main.c.o"
+  "/Users/developer/Desktop/malloc/src/block_creation.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/block_creation.c.o"
   "/Users/developer/Desktop/malloc/src/block_operations.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/block_operations.c.o"
   "/Users/developer/Desktop/malloc/src/helpers.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/helpers.c.o"
   "/Users/developer/Desktop/malloc/src/malloc.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/malloc.c.o"

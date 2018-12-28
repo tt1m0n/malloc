@@ -90,8 +90,6 @@ t_zone		*add_new_zone(t_zone *zone, size_t data_size)
 	{
 		next_zone = current_zone->next_zone;
 		next_zone->previous_zone = current_zone;
-		block_init(current_zone->next_zone,
-				current_zone->next_zone->start_block, data_size);
 	}
 	return (current_zone->next_zone);
 }

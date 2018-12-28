@@ -86,6 +86,9 @@
 		<Unit filename="/Users/developer/Desktop/malloc/main.c">
 			<Option target="malloc"/>
 		</Unit>
+		<Unit filename="/Users/developer/Desktop/malloc/src/block_creation.c">
+			<Option target="malloc"/>
+		</Unit>
 		<Unit filename="/Users/developer/Desktop/malloc/src/block_operations.c">
 			<Option target="malloc"/>
 		</Unit>
