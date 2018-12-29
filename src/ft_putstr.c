@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omakovsk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/26 20:09:15 by omakovsk          #+#    #+#             */
-/*   Updated: 2017/11/01 15:20:51 by omakovsk         ###   ########.fr       */
+/*   Created: 2017/11/02 12:27:52 by omakovsk          #+#    #+#             */
+/*   Updated: 2017/11/03 14:52:24 by omakovsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/malloc.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_putstr(char const *s)
 {
-	unsigned char *p;
+	int i;
 
-	p = s;
-	while (n--)
+	i = 0;
+	if (s == NULL)
+		return ;
+	while (s[i] != '\0')
 	{
-		*p++ = '\0';
+		ft_putchar(s[i]);
+		i++;
 	}
 }

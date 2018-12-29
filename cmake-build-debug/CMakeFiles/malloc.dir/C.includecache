@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/developer/Desktop/malloc/include/malloc.h
+/Users/omakovsk/Documents/malloc/include/malloc.h
 sys/mman.h
 -
 unistd.h
 -
 
-/Users/developer/Desktop/malloc/main.c
-stdio.h
--
-stdlib.h
--
-include/malloc.h
-/Users/developer/Desktop/malloc/include/malloc.h
+/Users/omakovsk/Documents/malloc/src/block_creation.c
+../include/malloc.h
+/Users/omakovsk/Documents/malloc/include/malloc.h
 

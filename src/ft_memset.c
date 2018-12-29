@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omakovsk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/26 20:09:15 by omakovsk          #+#    #+#             */
-/*   Updated: 2017/11/01 15:20:51 by omakovsk         ###   ########.fr       */
+/*   Created: 2017/10/26 11:34:40 by omakovsk          #+#    #+#             */
+/*   Updated: 2017/11/01 13:25:11 by omakovsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/malloc.h"
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char *p;
 
-	p = s;
-	while (n--)
+	p = (unsigned char *)b;
+	while (len--)
 	{
-		*p++ = '\0';
+		*p++ = (unsigned char)c;
 	}
+	return (b);
 }

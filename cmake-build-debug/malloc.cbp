@@ -8,103 +8,130 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/developer/Desktop/malloc/cmake-build-debug"/>
+				<Option working_dir="/Users/omakovsk/Documents/malloc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/developer/Desktop/malloc/cmake-build-debug"/>
+				<Option working_dir="/Users/omakovsk/Documents/malloc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/developer/Desktop/malloc/cmake-build-debug"/>
+				<Option working_dir="/Users/omakovsk/Documents/malloc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="malloc">
-				<Option output="/Users/developer/Desktop/malloc/cmake-build-debug/malloc" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/developer/Desktop/malloc/cmake-build-debug"/>
+				<Option output="/Users/omakovsk/Documents/malloc/cmake-build-debug/malloc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/omakovsk/Documents/malloc/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 malloc"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 malloc"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="malloc/fast">
-				<Option output="/Users/developer/Desktop/malloc/cmake-build-debug/malloc" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/developer/Desktop/malloc/cmake-build-debug"/>
+				<Option output="/Users/omakovsk/Documents/malloc/cmake-build-debug/malloc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/omakovsk/Documents/malloc/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 malloc/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 malloc/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/omakovsk/Documents/malloc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/developer/Desktop/malloc/include/malloc.h">
+		<Unit filename="/Users/omakovsk/Documents/malloc/include/malloc.h">
 			<Option target="malloc"/>
 		</Unit>
-		<Unit filename="/Users/developer/Desktop/malloc/main.c">
+		<Unit filename="/Users/omakovsk/Documents/malloc/main.c">
 			<Option target="malloc"/>
 		</Unit>
-		<Unit filename="/Users/developer/Desktop/malloc/src/block_creation.c">
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/block_creation.c">
 			<Option target="malloc"/>
 		</Unit>
-		<Unit filename="/Users/developer/Desktop/malloc/src/block_operations.c">
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/block_operations.c">
 			<Option target="malloc"/>
 		</Unit>
-		<Unit filename="/Users/developer/Desktop/malloc/src/helpers.c">
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/free.c">
 			<Option target="malloc"/>
 		</Unit>
-		<Unit filename="/Users/developer/Desktop/malloc/src/malloc.c">
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/ft_bzero.c">
 			<Option target="malloc"/>
 		</Unit>
-		<Unit filename="/Users/developer/Desktop/malloc/src/zone_creation.c">
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/ft_memset.c">
 			<Option target="malloc"/>
 		</Unit>
-		<Unit filename="/Users/developer/Desktop/malloc/src/zone_operations.c">
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/ft_putchar.c">
 			<Option target="malloc"/>
 		</Unit>
-		<Unit filename="/Users/developer/Desktop/malloc/CMakeLists.txt">
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/ft_putnbr.c">
+			<Option target="malloc"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/ft_putstr.c">
+			<Option target="malloc"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/helpers.c">
+			<Option target="malloc"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/malloc.c">
+			<Option target="malloc"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/realloc.c">
+			<Option target="malloc"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/show_alloc_mem.c">
+			<Option target="malloc"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/zone_creation.c">
+			<Option target="malloc"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/zone_operations.c">
+			<Option target="malloc"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/zone_release.c">
+			<Option target="malloc"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/malloc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

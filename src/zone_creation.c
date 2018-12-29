@@ -6,14 +6,16 @@ t_zone	*start_zone_init(size_t data_size)
 	char 	block_type;
 
 	start_zone = (t_zone*)g_start_address;
-	if (start_zone == NULL)
+	if (!start_zone)
 	{
 		block_type = get_block_type(data_size);
 		start_zone = get_new_zone(data_size, block_type);
-		if (start_zone == NULL)
-			return NULL;
-		g_start_address = start_zone;
-		block_init(start_zone, (t_block*)start_zone->start_block, data_size);
+		if (!start_zone)
+		{
+			return (NULL);
+		}
+		g_start_address = (void*)start_zone;
+		block_init(start_zone, start_zone->start_block, data_size);
 	}
 	return (start_zone);
 }
@@ -25,6 +27,13 @@ t_zone	*get_new_zone(size_t block_size, char block_type)
 
 	if (block_type == LARGE)
 	{
+        /*
+        ** when block_size + sizeof(t_block) > SIZE_T_MAX, start new cycle
+        */
+        if (SIZE_T_MAX - block_size < sizeof(t_block))
+        {
+            return (NULL);
+        }
 		size_to_allocate = block_size + sizeof(t_block);
 	}
 	else
@@ -32,11 +41,11 @@ t_zone	*get_new_zone(size_t block_size, char block_type)
 		size_to_allocate = get_size_to_allocate(block_size);
 	}
 	zone_ptr = zone_allocate(size_to_allocate);
-	if (zone_ptr != NULL)
+	if (zone_ptr)
 	{
 		zone_init(size_to_allocate, block_type, (t_zone*)zone_ptr);
 	}
-	return (zone_ptr);
+	return ((t_zone*)zone_ptr);
 }
 
 size_t	get_size_to_allocate(size_t block_size)
@@ -47,6 +56,10 @@ size_t	get_size_to_allocate(size_t block_size)
 
 	number_of_pages = 0;
 	number_allocation = 0;
+	if (!block_size)
+	{
+		return (0);
+	}
 	page_size = (size_t)getpagesize();
 	while (number_allocation < MIN_ALLOCATION_PER_ZONE)
 	{
