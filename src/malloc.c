@@ -2,7 +2,8 @@
 
 void	*g_start_address = NULL;
 
-void	*ft_malloc(size_t size)
+
+void	*malloc(size_t size)
 {
 	t_zone	*start_zone;
 	t_block	*block;

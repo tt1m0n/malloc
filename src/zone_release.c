@@ -2,7 +2,7 @@
 
 t_my_bool   is_need_release_zone(t_zone *zone)
 {
-	if (!zone || !zone->previous_zone)
+	if (!zone)
 	{
 		return (FALSE);
 	}
@@ -27,11 +27,24 @@ t_my_bool   zone_is_empty(t_zone *zone)
 
 void    release_zone(t_zone *zone)
 {
+   // t_zone  *previous_zone;
+   // t_zone  *next_zone;
 
-	((t_zone*)zone->previous_zone)->next_zone = zone->next_zone;
+//    previous_zone = (t_zone*)zone->previous_zone;
+//    next_zone = (t_zone*)zone->next_zone;
+//    if (!zone->previous_zone)
+//    {
+//        g_start_address = zone->next_zone;
+//        next_zone->previous_zone = NULL;
+//    }
+//    else
+//    {
+//        previous_zone->next_zone = zone->next_zone;
+//        if (next_zone)
+//        {
+//            next_zone->previous_zone = previous_zone;
+//        }
+//    }
 
-	if (munmap((void*)zone, zone->size) == -1)
-	{
-		ft_putstr("error in munmap\n");
-	}
+	munmap((void*)zone, zone->size);
 }

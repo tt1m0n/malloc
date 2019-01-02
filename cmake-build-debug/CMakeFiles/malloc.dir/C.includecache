@@ -11,8 +11,20 @@ sys/mman.h
 -
 unistd.h
 -
+stdlib.h
+-
 
-/Users/omakovsk/Documents/malloc/src/block_creation.c
+/Users/omakovsk/Documents/malloc/main.c
+stdio.h
+-
+stdlib.h
+-
+include/malloc.h
+/Users/omakovsk/Documents/malloc/include/malloc.h
+memory.h
+-
+
+/Users/omakovsk/Documents/malloc/src/zone_release.c
 ../include/malloc.h
 /Users/omakovsk/Documents/malloc/include/malloc.h
 

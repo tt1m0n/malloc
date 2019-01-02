@@ -14,11 +14,7 @@ t_block			*add_block_to_zone(t_zone *zone, size_t data_size)
 			sizeof(t_block) + last_block->data_size);
 	block_init(zone, new_block, data_size);
 
-	/*
-	** double linked list
-	*/
 	last_block->next_address = (void*)new_block;
 	return new_block;
 }
-
 

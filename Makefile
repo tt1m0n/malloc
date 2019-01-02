@@ -21,7 +21,9 @@ endif
 
 #_____________FILES____________#
 
-SRC = malloc.c \
+SRC = malloc.c free.c realloc.c block_creation.c block_operations.c\
+        ft_bzero.c ft_memset.c ft_putchar.c ft_putnbr.c ft_putstr.c\
+        helpers.c show_alloc_mem.c zone_creation.c zone_operations.c zone_release.c
 
 
 OBJ = $(addprefix $(PATH_SRC), $(SRC:.c=.o))

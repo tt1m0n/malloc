@@ -1,13 +1,13 @@
 #include "../include/malloc.h"
 
-void        *ft_realloc(void *ptr, size_t size)
+void        *realloc(void *ptr, size_t size)
 {
     t_block *current_block;
     t_block *new_block;
     t_zone  *current_zone;
 
     if (!ptr || !g_start_address)
-        return (ft_malloc(size));
+        return (malloc(size));
     current_block = (t_block*)(ptr - sizeof(t_block));
     if (is_block_exist(current_block) == FALSE)
         return (NULL);
@@ -74,7 +74,7 @@ t_block     *new_allocation(t_block *block, size_t new_size)
     t_block *new_block;
     void    *ptr;
 
-    ptr = ft_malloc(new_size);
+    ptr = malloc(new_size);
     if (!ptr)
     {
         return (NULL);
@@ -83,7 +83,7 @@ t_block     *new_allocation(t_block *block, size_t new_size)
     if (new_block)
     {
         data_copy(new_block->ptr_data, block->ptr_data, block->data_size);
-        ft_free(block->ptr_data);
+        free(block->ptr_data);
     }
     return (new_block);
 }
@@ -99,6 +99,7 @@ void        data_copy(void *dst, void *src, size_t len)
         i++;
     }
 }
+
 
 
 

@@ -1,9 +1,8 @@
 #include "../include/malloc.h"
 
-void	ft_free(void *ptr)
+void	free(void *ptr)
 {
 	t_block	*block;
-	t_zone	*zone;
 
 	if (!ptr || !g_start_address)
 	{

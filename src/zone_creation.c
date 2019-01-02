@@ -86,7 +86,7 @@ void	*zone_allocate(size_t size_to_allocate)
 t_zone		*add_new_zone(t_zone *zone, size_t data_size)
 {
 	t_zone	*current_zone;
-	t_zone	*next_zone;
+	t_zone  *new_zone;
 
 	if (!zone)
 	{
@@ -97,12 +97,12 @@ t_zone		*add_new_zone(t_zone *zone, size_t data_size)
 	{
 		current_zone = current_zone->next_zone;
 	}
-	current_zone->next_zone = get_new_zone(data_size,
+	new_zone = get_new_zone(data_size,
 			get_block_type(data_size));
-	if (current_zone->next_zone)
+	if (new_zone)
 	{
-		next_zone = current_zone->next_zone;
-		next_zone->previous_zone = current_zone;
+	    current_zone->next_zone = new_zone;
+	    new_zone->previous_zone = current_zone;
 	}
-	return (current_zone->next_zone);
+	return (new_zone);
 }

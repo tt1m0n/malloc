@@ -3,6 +3,7 @@
 
 #include <sys/mman.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 # define TINY 'T'
 # define SMALL 'S'
@@ -14,7 +15,7 @@
 #define TRUE 1
 #define FALSE 0
 
-#define SIZE_T_MAX (size_t)18446744073709551615
+#define SIZE_T_MAX 18446744073709551615UL
 
 typedef unsigned int t_my_bool;
 
@@ -44,7 +45,7 @@ extern void			*g_start_address;
 /*
 ** malloc.c
 */
-void			*ft_malloc(size_t size);
+void			*malloc(size_t size);
 t_block			*get_block(t_zone *start_zone, size_t size);
 
 
@@ -105,7 +106,7 @@ t_my_bool       is_block_exist(t_block *check_block);
 /*
 ** realloc.c
 */
-void            *ft_realloc(void *ptr, size_t size);
+void            *realloc(void *ptr, size_t size);
 t_block         *find_new_space(t_block *block, size_t size);
 t_my_bool       block_fusion_realloc(t_block *block, size_t new_size);
 t_block         *new_allocation(t_block *block, size_t new_size);
@@ -115,7 +116,7 @@ void            data_copy(void *dst, void *src, size_t len);
 /*
 ** free.c
 */
-void	        ft_free(void *ptr);
+void	        free(void *ptr);
 void            release_block(t_block *block);
 void            block_fusion_free(t_block *block);
 

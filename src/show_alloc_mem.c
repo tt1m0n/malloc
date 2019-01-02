@@ -37,7 +37,7 @@ void    show_block_memory(t_block *block)
 		ft_puthex((unsigned int)(current_block->ptr_data +
 		                         current_block->data_size));
 		ft_putstr(" : ");
-		ft_putnbr((size_t)block->data_size);
+		ft_putnbr((size_t)current_block->data_size);
 		ft_putstr(" bytes");
 		ft_putstr("\n");
 		current_block = (t_block*)current_block->next_address;
