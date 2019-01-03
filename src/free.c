@@ -4,6 +4,7 @@ void	free(void *ptr)
 {
 	t_block	*block;
 
+	ft_putstr("free\n");
 	if (!ptr || !g_start_address)
 	{
 		return ;

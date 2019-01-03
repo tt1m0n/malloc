@@ -27,24 +27,23 @@ t_my_bool   zone_is_empty(t_zone *zone)
 
 void    release_zone(t_zone *zone)
 {
-   // t_zone  *previous_zone;
-   // t_zone  *next_zone;
+    t_zone  *previous_zone;
+    t_zone  *next_zone;
 
-//    previous_zone = (t_zone*)zone->previous_zone;
-//    next_zone = (t_zone*)zone->next_zone;
-//    if (!zone->previous_zone)
-//    {
-//        g_start_address = zone->next_zone;
-//        next_zone->previous_zone = NULL;
-//    }
-//    else
-//    {
-//        previous_zone->next_zone = zone->next_zone;
-//        if (next_zone)
-//        {
-//            next_zone->previous_zone = previous_zone;
-//        }
-//    }
+    previous_zone = (t_zone*)zone->previous_zone;
+    next_zone = (t_zone*)zone->next_zone;
+    if (!zone->previous_zone)
+    {
+        g_start_address = zone->next_zone;
+    }
+    else
+    {
+        previous_zone->next_zone = zone->next_zone;
+        if (next_zone)
+        {
+            next_zone->previous_zone = previous_zone;
+        }
+    }
 
 	munmap((void*)zone, zone->size);
 }
