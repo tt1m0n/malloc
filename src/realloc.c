@@ -6,6 +6,7 @@ void        *realloc(void *ptr, size_t size)
     t_block *new_block;
     t_zone  *current_zone;
 
+    ft_putstr("realloc\n");
     if (!ptr || !g_start_address)
         return (malloc(size));
     current_block = (t_block*)(ptr - sizeof(t_block));
@@ -13,7 +14,7 @@ void        *realloc(void *ptr, size_t size)
         return (NULL);
     if (current_block->is_free == TRUE)
         return (NULL);
-    current_zone = (t_zone*)current_block->zone;
+    current_zone = current_block->zone;
     if (is_correct_type_zone(current_zone, size) == TRUE)
         new_block = find_new_space(current_block, size);
     else
@@ -36,10 +37,9 @@ t_block     *find_new_space(t_block *block, size_t size)
         /*
         ** set next address
         */
-        if (block->next_address)
+        if (block->next_block)
         {
-            block->next_address =
-                    ((t_block*)block->next_address)->next_address;
+            block->next_block = block->next_block->next_block;
         }
         return (block);
     }
@@ -57,7 +57,7 @@ t_my_bool   block_fusion_realloc(t_block *block, size_t new_size)
     {
         return (FALSE);
     }
-    next_block = (t_block*)block->next_address;
+    next_block = block->next_block;
     if (!next_block  || !next_block->is_free)
     {
         return (FALSE);

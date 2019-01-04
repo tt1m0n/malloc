@@ -20,7 +20,7 @@ t_zone	*start_zone_init(size_t data_size)
 	return (start_zone);
 }
 
-t_zone	*get_new_zone(size_t block_size, char block_type)
+t_zone	*get_new_zone(size_t zone_size, char block_type)
 {
 	size_t	size_to_allocate;
 	void	*zone_ptr;
@@ -28,17 +28,17 @@ t_zone	*get_new_zone(size_t block_size, char block_type)
 	if (block_type == LARGE)
 	{
         /*
-        ** when block_size + sizeof(t_block) > SIZE_T_MAX, start new cycle
+        ** when block_size + sizeof(t_block) + sizeof(t_zone) > SIZE_T_MAX, start new cycle
         */
-        if (SIZE_T_MAX - block_size < sizeof(t_block))
+        if (SIZE_T_MAX - zone_size < sizeof(t_zone) + sizeof(t_block))
         {
             return (NULL);
         }
-		size_to_allocate = block_size + sizeof(t_block);
+		size_to_allocate = zone_size + sizeof(t_zone) + sizeof(t_block);
 	}
 	else
 	{
-		size_to_allocate = get_size_to_allocate(block_size);
+		size_to_allocate = get_size_to_allocate(zone_size);
 	}
 	zone_ptr = zone_allocate(size_to_allocate);
 	if (zone_ptr)

@@ -57,9 +57,9 @@ t_my_bool	is_available_space_zone(t_zone *zone, size_t data_size)
 
 	last_address = (void*)zone + zone->size;
 	last_block = zone->start_block;
-	while (last_block->next_address)
+	while (last_block->next_block)
 	{
-		last_block = last_block->next_address;
+		last_block = last_block->next_block;
 	}
 	possible_address = (void*)last_block + sizeof(t_block) +
 						last_block->data_size + sizeof(t_block) +

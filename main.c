@@ -1,19 +1,16 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "include/malloc.h"
-#include <memory.h>
-
+#include "stdio.h"
+#include <string.h>
 int main()
 {
     int i;
     char *addr;
 
     i = 0;
-    while (i < 1024)
+    while (i < 10000)
     {
-        addr = (char*)malloc(1024);
-        addr[0] = 42;
-        free(addr);
+        addr = (char*)malloc(100);
+        addr = realloc(addr, 500);
         i++;
     }
     return (0);

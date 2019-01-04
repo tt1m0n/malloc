@@ -2,12 +2,12 @@
 
 void	*g_start_address = NULL;
 
-
 void	*malloc(size_t size)
 {
 	t_zone	*start_zone;
 	t_block	*block;
 
+	ft_putstr("malloc\n");
 	block = NULL;
 	start_zone = start_zone_init(size);
 	if (!start_zone)

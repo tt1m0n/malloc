@@ -24,21 +24,21 @@ typedef unsigned int t_my_bool;
 */
 # define MIN_ALLOCATION_PER_ZONE 100
 
-typedef struct	s_block {
+typedef struct	    s_block {
 	void			*zone;
-	void			*next_address;
+	struct s_block	*next_block;
 	size_t			data_size;
     t_my_bool	    is_free;
 	void			*ptr_data;
-}				t_block;
+}				    t_block;
 
-typedef struct	s_zone {
-	t_block		*start_block;
-	void		*next_zone;
-	void		*previous_zone;
-	size_t		size;
-	char		type;
-}				t_zone;
+typedef struct	    s_zone {
+	t_block		    *start_block;
+	struct s_zone	*next_zone;
+	struct s_zone   *previous_zone;
+	size_t		    size;
+	char		    type;
+}				    t_zone;
 
 extern void			*g_start_address;
 

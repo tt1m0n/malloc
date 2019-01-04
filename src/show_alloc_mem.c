@@ -21,7 +21,7 @@ void    show_zone_memory(void)
 		ft_puthex((unsigned int)((void*)current_zone));
 		ft_putstr("\n");
 		show_block_memory(current_zone->start_block);
-		current_zone = (t_zone*)current_zone->next_zone;
+		current_zone = current_zone->next_zone;
 	}
 }
 
@@ -40,7 +40,7 @@ void    show_block_memory(t_block *block)
 		ft_putnbr((size_t)current_block->data_size);
 		ft_putstr(" bytes");
 		ft_putstr("\n");
-		current_block = (t_block*)current_block->next_address;
+		current_block = current_block->next_block;
 	}
 }
 

@@ -4,22 +4,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/developer/Desktop/malloc/main.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/main.c.o"
-  "/Users/developer/Desktop/malloc/src/block_creation.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/block_creation.c.o"
-  "/Users/developer/Desktop/malloc/src/block_operations.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/block_operations.c.o"
-  "/Users/developer/Desktop/malloc/src/free.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/free.c.o"
-  "/Users/developer/Desktop/malloc/src/ft_bzero.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/ft_bzero.c.o"
-  "/Users/developer/Desktop/malloc/src/ft_memset.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/ft_memset.c.o"
-  "/Users/developer/Desktop/malloc/src/ft_putchar.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/ft_putchar.c.o"
-  "/Users/developer/Desktop/malloc/src/ft_putnbr.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/ft_putnbr.c.o"
-  "/Users/developer/Desktop/malloc/src/ft_putstr.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/ft_putstr.c.o"
-  "/Users/developer/Desktop/malloc/src/helpers.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/helpers.c.o"
-  "/Users/developer/Desktop/malloc/src/malloc.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/malloc.c.o"
-  "/Users/developer/Desktop/malloc/src/realloc.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/realloc.c.o"
-  "/Users/developer/Desktop/malloc/src/show_alloc_mem.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/show_alloc_mem.c.o"
-  "/Users/developer/Desktop/malloc/src/zone_creation.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/zone_creation.c.o"
-  "/Users/developer/Desktop/malloc/src/zone_operations.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/zone_operations.c.o"
-  "/Users/developer/Desktop/malloc/src/zone_release.c" "/Users/developer/Desktop/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/zone_release.c.o"
+  "/Users/omakovsk/Documents/malloc/main.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/main.c.o"
+  "/Users/omakovsk/Documents/malloc/src/block_creation.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/block_creation.c.o"
+  "/Users/omakovsk/Documents/malloc/src/block_operations.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/block_operations.c.o"
+  "/Users/omakovsk/Documents/malloc/src/free.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/free.c.o"
+  "/Users/omakovsk/Documents/malloc/src/ft_bzero.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/ft_bzero.c.o"
+  "/Users/omakovsk/Documents/malloc/src/ft_memset.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/ft_memset.c.o"
+  "/Users/omakovsk/Documents/malloc/src/ft_putchar.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/ft_putchar.c.o"
+  "/Users/omakovsk/Documents/malloc/src/ft_putnbr.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/ft_putnbr.c.o"
+  "/Users/omakovsk/Documents/malloc/src/ft_putstr.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/ft_putstr.c.o"
+  "/Users/omakovsk/Documents/malloc/src/helpers.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/helpers.c.o"
+  "/Users/omakovsk/Documents/malloc/src/malloc.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/malloc.c.o"
+  "/Users/omakovsk/Documents/malloc/src/realloc.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/realloc.c.o"
+  "/Users/omakovsk/Documents/malloc/src/show_alloc_mem.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/show_alloc_mem.c.o"
+  "/Users/omakovsk/Documents/malloc/src/zone_creation.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/zone_creation.c.o"
+  "/Users/omakovsk/Documents/malloc/src/zone_operations.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/zone_operations.c.o"
+  "/Users/omakovsk/Documents/malloc/src/zone_release.c" "/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles/malloc.dir/src/zone_release.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
