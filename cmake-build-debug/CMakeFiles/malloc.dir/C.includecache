@@ -13,6 +13,8 @@ unistd.h
 -
 stdlib.h
 -
+pthread.h
+-
 
 /Users/omakovsk/Documents/malloc/main.c
 include/malloc.h

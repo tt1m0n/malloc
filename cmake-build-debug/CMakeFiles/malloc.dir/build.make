@@ -265,6 +265,45 @@ CMakeFiles/malloc.dir/src/show_alloc_mem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/malloc.dir/src/show_alloc_mem.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/omakovsk/Documents/malloc/src/show_alloc_mem.c -o CMakeFiles/malloc.dir/src/show_alloc_mem.c.s
 
+CMakeFiles/malloc.dir/src/calloc.c.o: CMakeFiles/malloc.dir/flags.make
+CMakeFiles/malloc.dir/src/calloc.c.o: ../src/calloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/malloc.dir/src/calloc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/malloc.dir/src/calloc.c.o   -c /Users/omakovsk/Documents/malloc/src/calloc.c
+
+CMakeFiles/malloc.dir/src/calloc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/malloc.dir/src/calloc.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/omakovsk/Documents/malloc/src/calloc.c > CMakeFiles/malloc.dir/src/calloc.c.i
+
+CMakeFiles/malloc.dir/src/calloc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/malloc.dir/src/calloc.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/omakovsk/Documents/malloc/src/calloc.c -o CMakeFiles/malloc.dir/src/calloc.c.s
+
+CMakeFiles/malloc.dir/src/reallocf.c.o: CMakeFiles/malloc.dir/flags.make
+CMakeFiles/malloc.dir/src/reallocf.c.o: ../src/reallocf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/malloc.dir/src/reallocf.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/malloc.dir/src/reallocf.c.o   -c /Users/omakovsk/Documents/malloc/src/reallocf.c
+
+CMakeFiles/malloc.dir/src/reallocf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/malloc.dir/src/reallocf.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/omakovsk/Documents/malloc/src/reallocf.c > CMakeFiles/malloc.dir/src/reallocf.c.i
+
+CMakeFiles/malloc.dir/src/reallocf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/malloc.dir/src/reallocf.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/omakovsk/Documents/malloc/src/reallocf.c -o CMakeFiles/malloc.dir/src/reallocf.c.s
+
+CMakeFiles/malloc.dir/src/show_mem_bonuses.c.o: CMakeFiles/malloc.dir/flags.make
+CMakeFiles/malloc.dir/src/show_mem_bonuses.c.o: ../src/show_mem_bonuses.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/malloc.dir/src/show_mem_bonuses.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/malloc.dir/src/show_mem_bonuses.c.o   -c /Users/omakovsk/Documents/malloc/src/show_mem_bonuses.c
+
+CMakeFiles/malloc.dir/src/show_mem_bonuses.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/malloc.dir/src/show_mem_bonuses.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/omakovsk/Documents/malloc/src/show_mem_bonuses.c > CMakeFiles/malloc.dir/src/show_mem_bonuses.c.i
+
+CMakeFiles/malloc.dir/src/show_mem_bonuses.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/malloc.dir/src/show_mem_bonuses.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/omakovsk/Documents/malloc/src/show_mem_bonuses.c -o CMakeFiles/malloc.dir/src/show_mem_bonuses.c.s
+
 # Object files for target malloc
 malloc_OBJECTS = \
 "CMakeFiles/malloc.dir/src/malloc.c.o" \
@@ -282,7 +321,10 @@ malloc_OBJECTS = \
 "CMakeFiles/malloc.dir/src/ft_memset.c.o" \
 "CMakeFiles/malloc.dir/src/ft_putnbr.c.o" \
 "CMakeFiles/malloc.dir/src/ft_putstr.c.o" \
-"CMakeFiles/malloc.dir/src/show_alloc_mem.c.o"
+"CMakeFiles/malloc.dir/src/show_alloc_mem.c.o" \
+"CMakeFiles/malloc.dir/src/calloc.c.o" \
+"CMakeFiles/malloc.dir/src/reallocf.c.o" \
+"CMakeFiles/malloc.dir/src/show_mem_bonuses.c.o"
 
 # External object files for target malloc
 malloc_EXTERNAL_OBJECTS =
@@ -303,9 +345,12 @@ malloc: CMakeFiles/malloc.dir/src/ft_memset.c.o
 malloc: CMakeFiles/malloc.dir/src/ft_putnbr.c.o
 malloc: CMakeFiles/malloc.dir/src/ft_putstr.c.o
 malloc: CMakeFiles/malloc.dir/src/show_alloc_mem.c.o
+malloc: CMakeFiles/malloc.dir/src/calloc.c.o
+malloc: CMakeFiles/malloc.dir/src/reallocf.c.o
+malloc: CMakeFiles/malloc.dir/src/show_mem_bonuses.c.o
 malloc: CMakeFiles/malloc.dir/build.make
 malloc: CMakeFiles/malloc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C executable malloc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/omakovsk/Documents/malloc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable malloc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/malloc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

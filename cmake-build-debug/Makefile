@@ -204,6 +204,33 @@ src/block_operations.c.s:
 	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/block_operations.c.s
 .PHONY : src/block_operations.c.s
 
+src/calloc.o: src/calloc.c.o
+
+.PHONY : src/calloc.o
+
+# target to build an object file
+src/calloc.c.o:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/calloc.c.o
+.PHONY : src/calloc.c.o
+
+src/calloc.i: src/calloc.c.i
+
+.PHONY : src/calloc.i
+
+# target to preprocess a source file
+src/calloc.c.i:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/calloc.c.i
+.PHONY : src/calloc.c.i
+
+src/calloc.s: src/calloc.c.s
+
+.PHONY : src/calloc.s
+
+# target to generate assembly for a file
+src/calloc.c.s:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/calloc.c.s
+.PHONY : src/calloc.c.s
+
 src/free.o: src/free.c.o
 
 .PHONY : src/free.o
@@ -447,6 +474,33 @@ src/realloc.c.s:
 	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/realloc.c.s
 .PHONY : src/realloc.c.s
 
+src/reallocf.o: src/reallocf.c.o
+
+.PHONY : src/reallocf.o
+
+# target to build an object file
+src/reallocf.c.o:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/reallocf.c.o
+.PHONY : src/reallocf.c.o
+
+src/reallocf.i: src/reallocf.c.i
+
+.PHONY : src/reallocf.i
+
+# target to preprocess a source file
+src/reallocf.c.i:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/reallocf.c.i
+.PHONY : src/reallocf.c.i
+
+src/reallocf.s: src/reallocf.c.s
+
+.PHONY : src/reallocf.s
+
+# target to generate assembly for a file
+src/reallocf.c.s:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/reallocf.c.s
+.PHONY : src/reallocf.c.s
+
 src/show_alloc_mem.o: src/show_alloc_mem.c.o
 
 .PHONY : src/show_alloc_mem.o
@@ -473,6 +527,33 @@ src/show_alloc_mem.s: src/show_alloc_mem.c.s
 src/show_alloc_mem.c.s:
 	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/show_alloc_mem.c.s
 .PHONY : src/show_alloc_mem.c.s
+
+src/show_mem_bonuses.o: src/show_mem_bonuses.c.o
+
+.PHONY : src/show_mem_bonuses.o
+
+# target to build an object file
+src/show_mem_bonuses.c.o:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/show_mem_bonuses.c.o
+.PHONY : src/show_mem_bonuses.c.o
+
+src/show_mem_bonuses.i: src/show_mem_bonuses.c.i
+
+.PHONY : src/show_mem_bonuses.i
+
+# target to preprocess a source file
+src/show_mem_bonuses.c.i:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/show_mem_bonuses.c.i
+.PHONY : src/show_mem_bonuses.c.i
+
+src/show_mem_bonuses.s: src/show_mem_bonuses.c.s
+
+.PHONY : src/show_mem_bonuses.s
+
+# target to generate assembly for a file
+src/show_mem_bonuses.c.s:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/show_mem_bonuses.c.s
+.PHONY : src/show_mem_bonuses.c.s
 
 src/zone_creation.o: src/zone_creation.c.o
 
@@ -573,6 +654,9 @@ help:
 	@echo "... src/block_operations.o"
 	@echo "... src/block_operations.i"
 	@echo "... src/block_operations.s"
+	@echo "... src/calloc.o"
+	@echo "... src/calloc.i"
+	@echo "... src/calloc.s"
 	@echo "... src/free.o"
 	@echo "... src/free.i"
 	@echo "... src/free.s"
@@ -600,9 +684,15 @@ help:
 	@echo "... src/realloc.o"
 	@echo "... src/realloc.i"
 	@echo "... src/realloc.s"
+	@echo "... src/reallocf.o"
+	@echo "... src/reallocf.i"
+	@echo "... src/reallocf.s"
 	@echo "... src/show_alloc_mem.o"
 	@echo "... src/show_alloc_mem.i"
 	@echo "... src/show_alloc_mem.s"
+	@echo "... src/show_mem_bonuses.o"
+	@echo "... src/show_mem_bonuses.i"
+	@echo "... src/show_mem_bonuses.s"
 	@echo "... src/zone_creation.o"
 	@echo "... src/zone_creation.i"
 	@echo "... src/zone_creation.s"

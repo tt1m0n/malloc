@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   zone_operations.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omakovsk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/01/05 18:14:56 by omakovsk          #+#    #+#             */
+/*   Updated: 2019/01/05 18:14:58 by omakovsk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/malloc.h"
 
-void	zone_init(size_t size_of_allocation,
-			char block_type, t_zone *ptr_zone)
+void		zone_init(size_t size_of_allocation,
+						char block_type, t_zone *ptr_zone)
 {
 	ptr_zone->start_block = (t_block*)((void*)ptr_zone + sizeof(t_zone));
 	ptr_zone->next_zone = NULL;
@@ -11,7 +23,7 @@ void	zone_init(size_t size_of_allocation,
 }
 
 t_zone		*get_correct_type_zone(t_zone *start_zone,
-									 size_t data_size)
+									size_t data_size)
 {
 	t_zone	*current_zone;
 
@@ -27,7 +39,7 @@ t_zone		*get_correct_type_zone(t_zone *start_zone,
 	return (current_zone);
 }
 
-t_my_bool 	is_correct_type_zone(t_zone* zone, size_t data_size)
+t_my_bool	is_correct_type_zone(t_zone *zone, size_t data_size)
 {
 	if (zone && zone->type)
 	{

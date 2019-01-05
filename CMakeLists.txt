@@ -18,4 +18,4 @@ add_executable(malloc src/malloc.c
         src/ft_bzero.c
         src/ft_memset.c
         src/ft_putnbr.c
-        src/ft_putstr.c src/show_alloc_mem.c)
+        src/ft_putstr.c src/show_alloc_mem.c src/calloc.c src/reallocf.c src/show_mem_bonuses.c)

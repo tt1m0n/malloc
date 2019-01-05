@@ -10,6 +10,9 @@ CMakeFiles/malloc.dir/src/block_creation.c.o: ../src/block_creation.c
 CMakeFiles/malloc.dir/src/block_operations.c.o: ../include/malloc.h
 CMakeFiles/malloc.dir/src/block_operations.c.o: ../src/block_operations.c
 
+CMakeFiles/malloc.dir/src/calloc.c.o: ../include/malloc.h
+CMakeFiles/malloc.dir/src/calloc.c.o: ../src/calloc.c
+
 CMakeFiles/malloc.dir/src/free.c.o: ../include/malloc.h
 CMakeFiles/malloc.dir/src/free.c.o: ../src/free.c
 
@@ -37,8 +40,14 @@ CMakeFiles/malloc.dir/src/malloc.c.o: ../src/malloc.c
 CMakeFiles/malloc.dir/src/realloc.c.o: ../include/malloc.h
 CMakeFiles/malloc.dir/src/realloc.c.o: ../src/realloc.c
 
+CMakeFiles/malloc.dir/src/reallocf.c.o: ../include/malloc.h
+CMakeFiles/malloc.dir/src/reallocf.c.o: ../src/reallocf.c
+
 CMakeFiles/malloc.dir/src/show_alloc_mem.c.o: ../include/malloc.h
 CMakeFiles/malloc.dir/src/show_alloc_mem.c.o: ../src/show_alloc_mem.c
+
+CMakeFiles/malloc.dir/src/show_mem_bonuses.c.o: ../include/malloc.h
+CMakeFiles/malloc.dir/src/show_mem_bonuses.c.o: ../src/show_mem_bonuses.c
 
 CMakeFiles/malloc.dir/src/zone_creation.c.o: ../include/malloc.h
 CMakeFiles/malloc.dir/src/zone_creation.c.o: ../src/zone_creation.c

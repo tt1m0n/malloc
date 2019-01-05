@@ -1,20 +1,33 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   show_alloc_mem.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omakovsk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/01/05 18:14:39 by omakovsk          #+#    #+#             */
+/*   Updated: 2019/01/05 18:14:41 by omakovsk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/malloc.h"
 
-void    show_alloc_mem(void)
+void	show_alloc_mem(void)
 {
 	show_zone_memory();
 }
 
-void    show_zone_memory(void)
+void	show_zone_memory(void)
 {
-	t_zone  *current_zone;
+	t_zone	*current_zone;
 
+	pthread_mutex_lock(&g_mutex);
 	current_zone = (t_zone*)g_start_address;
-	while(current_zone)
+	while (current_zone)
 	{
-		if(current_zone->type == TINY)
+		if (current_zone->type == TINY)
 			ft_putstr("TINY : ");
-		else if(current_zone->type == SMALL)
+		else if (current_zone->type == SMALL)
 			ft_putstr("SMALL : ");
 		else
 			ft_putstr("LARGE : ");
@@ -22,20 +35,22 @@ void    show_zone_memory(void)
 		ft_putstr("\n");
 		show_block_memory(current_zone->start_block);
 		current_zone = current_zone->next_zone;
+		ft_putchar('\n');
 	}
+	pthread_mutex_unlock(&g_mutex);
 }
 
-void    show_block_memory(t_block *block)
+void	show_block_memory(t_block *block)
 {
 	t_block *current_block;
 
 	current_block = block;
-	while(current_block)
+	while (current_block)
 	{
 		ft_puthex((unsigned int)current_block->ptr_data);
 		ft_putstr(" - ");
 		ft_puthex((unsigned int)(current_block->ptr_data +
-		                         current_block->data_size));
+		current_block->data_size));
 		ft_putstr(" : ");
 		ft_putnbr((size_t)current_block->data_size);
 		ft_putstr(" bytes");
@@ -71,7 +86,7 @@ void	ft_puthex(unsigned int number)
 	}
 }
 
-void    fill_zero_ascii(char *str, size_t len)
+void	fill_zero_ascii(char *str, size_t len)
 {
 	size_t i;
 

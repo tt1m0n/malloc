@@ -9,48 +9,41 @@ PATH_SRC = ./src/
 
 PATH_INC = ./include
 
-CC = gcc
+INCLUDES = -I $(PATH_INC)
 
-ifeq ($(DEBUG),yes)
-	CFLAGS = $(INCLUDES) -g -fPIC
-	LDFLAGS = -shared
-else
-	CFLAGS = -Wall -Wextra -Werror $(INCLUDES) -fPIC
-	LDFLAGS = -shared
-endif
+FLAGS = -Wall -Wextra -Werror $(INCLUDES) -fPIC
 
 #_____________FILES____________#
 
 SRC = malloc.c free.c realloc.c block_creation.c block_operations.c\
         ft_bzero.c ft_memset.c ft_putchar.c ft_putnbr.c ft_putstr.c\
-        helpers.c show_alloc_mem.c zone_creation.c zone_operations.c zone_release.c
+        helpers.c show_alloc_mem.c zone_creation.c zone_operations.c zone_release.c\
+		calloc.c reallocf.c show_mem_bonuses.c
 
 
 OBJ = $(addprefix $(PATH_SRC), $(SRC:.c=.o))
 
 #____________RULES_____________#
 
-.PHONY: clean fclean re test
-
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	# make -C libft/
-	# $(CC) $(OBJ) -o $(NAME) $(LIBS) $(LDFLAGS)
-	$(CC) $(OBJ) -o $(NAME) $(LDFLAGS)
+	$(DEL_LINK)
+	gcc $(FLAGS) $(OBJ) -o $(NAME) -shared
 	ln -s $(NAME) $(NAME_LINK)
 
-#____CLEAN____#
+$(OBJ): %.o: %.c
+	gcc -c $(FLAGS) $< -o $@
+
+DEL_LINK = rm -rf $(NAME_LINK)
 
 clean:
-	rm -f $(OBJ)
-
-#___FCLEAN___#
+	rm -rf $(OBJ)
 
 fclean: clean
-	rm -f $(NAME)
-	rm -f $(NAME_LINK)
-
-#____RE____#
+	rm -rf $(NAME)
+	$(DEL_LINK)
 
 re: fclean all
+
+.PHONY: clean all fclean re

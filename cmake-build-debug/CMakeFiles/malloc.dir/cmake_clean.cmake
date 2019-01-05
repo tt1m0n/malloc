@@ -15,6 +15,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/malloc.dir/src/ft_putnbr.c.o"
   "CMakeFiles/malloc.dir/src/ft_putstr.c.o"
   "CMakeFiles/malloc.dir/src/show_alloc_mem.c.o"
+  "CMakeFiles/malloc.dir/src/calloc.c.o"
+  "CMakeFiles/malloc.dir/src/reallocf.c.o"
+  "CMakeFiles/malloc.dir/src/show_mem_bonuses.c.o"
   "malloc.pdb"
   "malloc"
 )

@@ -92,6 +92,9 @@
 		<Unit filename="/Users/omakovsk/Documents/malloc/src/block_operations.c">
 			<Option target="malloc"/>
 		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/calloc.c">
+			<Option target="malloc"/>
+		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/malloc/src/free.c">
 			<Option target="malloc"/>
 		</Unit>
@@ -119,7 +122,13 @@
 		<Unit filename="/Users/omakovsk/Documents/malloc/src/realloc.c">
 			<Option target="malloc"/>
 		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/reallocf.c">
+			<Option target="malloc"/>
+		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/malloc/src/show_alloc_mem.c">
+			<Option target="malloc"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/malloc/src/show_mem_bonuses.c">
 			<Option target="malloc"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/malloc/src/zone_creation.c">
